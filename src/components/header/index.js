@@ -12,12 +12,13 @@ const Header = () => {
     });
   }, []);
   return (
-    <p>
-      {header.nama}
-    </p>
-  )
-}
-
-
+    <>
+      <h1>
+        {header.nama}
+        {header.hello}
+      </h1>
+    </>
+  );
+};
 
 export default Header;
