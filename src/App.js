@@ -1,10 +1,10 @@
 import React from "react";
 import "./assets/css/style.css"; 
-import About from "./components/about";
+import Header from "./components/header";
 
 const App = () => {
   return (
-      <About /> 
+      <Header/> 
   );
 };
 

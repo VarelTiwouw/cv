@@ -1,23 +1,23 @@
 import { getDatabase, ref, onValue } from "firebase/database";
 import { useEffect, useState } from "react";
 
-const About = () => {
-  const [about, setAbout] = useState({});
+const Header = () => {
+  const [header, setHeader] = useState({});
   useEffect(() => {
     const db = getDatabase();
-    const aboutRef = ref(db, "about/");
-    onValue(aboutRef, (snapshot) => {
+    const headerRef = ref(db, "header/");
+    onValue(headerRef, (snapshot) => {
       const data = snapshot.val();
-      setAbout(data);
+      setHeader(data);
     });
   }, []);
   return (
     <p>
-      {about.description}
+      {header.nama}
     </p>
   )
 }
 
 
 
-export default About;
+export default Header;
