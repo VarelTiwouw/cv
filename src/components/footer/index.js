@@ -1,13 +1,25 @@
-const Footer = ()=>{
-    return (
-        <footer className="footer">
+import { getDatabase, ref, onValue } from "firebase/database";
+import { useEffect, useState } from "react";
+
+const Footer = () => {
+  const [footer, setFooter] = useState({});
+  useEffect(() => {
+    const db = getDatabase();
+    const footerRef = ref(db, "Footer/");
+    onValue(footerRef, (snapshot) => {
+      const data = snapshot.val();
+      setFooter(data);
+    });
+  }, []);
+  return (
+    <footer className="footer">
         <div className="container">
           <div className="row">
             <div className="col-md-4">
-              <p>Design by: Varel Tiwouw<br />
+              <p>{footer.designby}<br />
               </p></div>
             <div className="col-md-4 text-center">
-              <p>Made with <i className="fa fa-heart" />
+              <p>{footer.made} <i className="fa fa-heart" />
               </p></div>
             <div className="col-md-4">
               <div className="social-footer">
@@ -20,5 +32,5 @@ const Footer = ()=>{
       </footer>
     )
 }
-
+        
 export default Footer

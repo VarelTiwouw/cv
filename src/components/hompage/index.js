@@ -1,12 +1,26 @@
-const Homepage = ()=>{
-    return (
+import { getDatabase, ref, onValue } from "firebase/database";
+import { useEffect, useState } from "react";
+
+const Homepage = () => {
+  const [homepage, setHomepage] = useState({});
+  const [isLoading, setIsLoading] = useState(true)
+  useEffect(() => {
+    const db = getDatabase();
+    const homepageRef = ref(db, "Home/");
+    onValue(homepageRef, (snapshot) => {
+      const data = snapshot.val();
+      setHomepage(data);
+    });
+  }, []);
+  return (
+
         <section className="section-image">
         <div className="img-overlay" />
         <div className="intro">
           <div className="row">
             <div className="col-md-12">
-              <h5>YOO!!</h5>
-              <h1>I'm Varel Tiwouw</h1>
+              <h5>{homepage.yoo}</h5>
+              <h1>{homepage.im}</h1>
               <p className="intro-desc"><span>Design</span>
                 <span className="colour-splash">•</span>
                 <span>Adventurer</span> <span className="colour-splash">•</span> <span>gaming
