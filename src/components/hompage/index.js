@@ -17,7 +17,7 @@ const Homepage = ()=>{
             <div className="col-md-8 col-md-offset-2">
               <div className="social">
                 <a href="http://www.instagram.com/varelate_" target="_blank"><i className="fa fa-instagram fa-3x" /></a> 
-                <a href="hhttps://github.com/VarelTiwouw" target="_blank"><i className="fa fa-github fa-3x" /></a>
+                <a href="https://github.com/VarelTiwouw" target="_blank"><i className="fa fa-github fa-3x" /></a>
               </div>{/* /social */}
             </div>{/* /col-md-8 */}
           </div>{/* /row */}
