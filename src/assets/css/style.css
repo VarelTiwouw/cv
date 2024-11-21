@@ -202,9 +202,9 @@ section {
 }
 
 .profilepic {
-    height: 200px;
-    width: 200px;
-    border-radius: 100px;
+    height: 300px;
+    width: auto;
+    border-radius: 150px;
 }
 
 .section-primary p {
@@ -248,7 +248,7 @@ section {
 }
 
 #skills {
-    background: #151515 url(https://images.unsplash.com/photo-1456983933114-c22026990f4b?dpr=2&auto=format&crop=entropy&fit=crop&w=1280&h=720&q=80) no-repeat center center;
+    background: #151515 url(https://res.cloudinary.com/dwjjkkh8r/image/upload/v1732192704/pexels-catiamatos-1072179_ffuhis.jpg) no-repeat center center;
     height: auto;
 }
 
@@ -386,7 +386,7 @@ footer p {
     }
 
     #skills {
-        background: #151515 url(https://images.unsplash.com/photo-1456983933114-c22026990f4b?dpr=2&auto=format&crop=entropy&fit=crop&w=1280&h=720&q=80) no-repeat center center;
+        background: #151515 url(https://images.unsplash.com/photo-1542831371-29b0f74f9713?q=80&w=1470&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D) no-repeat center center;
         background-position: top center;
 
     }

@@ -21,10 +21,15 @@ const Homepage = () => {
             <div className="col-md-12">
               <h5>{homepage.yoo}</h5>
               <h1>{homepage.im}</h1>
-              <p className="intro-desc"><span>Design</span>
+              <p className="intro-desc">
+                <span>Design</span>
                 <span className="colour-splash">•</span>
-                <span>Adventurer</span> <span className="colour-splash">•</span> <span>gaming
-                </span></p>
+                <span>Adventurer</span>
+                <span className="colour-splash">•</span>
+                <span>game</span>
+                <span className="colour-splash">•</span>
+                <span>music</span>
+              </p>
             </div>
           </div>
           <div className="row">
